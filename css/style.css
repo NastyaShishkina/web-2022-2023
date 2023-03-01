@@ -1,0 +1,62 @@
+.header
+{
+    height: 40px;
+}
+
+.header__title
+{
+    font: normal 400 26px/26px 'Lora';
+    color: #000;
+}
+
+.header__nav-menu__menu-item
+{
+    text-decoration: none;
+    font: normal 400 12px/20px 'Oxygen';
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.top-block
+{
+    height: 500px;
+    background: url("../images/background.jpg");
+}
+
+.top-block__title
+{
+    font: normal 400 50px/51px 'Lora';
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.top-block__text
+{
+    font: normal 400 17px/20px 'Oxygen';
+    color: rgba(255, 255, 255, 0.63);
+}
+
+.top-block__button
+{
+    font: normal 400 13px/20px 'Oxygen';
+    padding: 12px 31px;
+    color: #fff;
+    background: #DD783F;
+    border: 0;
+    border-radius: 3px;
+}
+
+.categories-menu
+{
+    height: 65px;
+    background: #FFFFFF;
+    border-radius: 0px;
+}
+
+.categories-menu__menu-item
+{
+    text-decoration: none;
+    font: normal 400 14px/20px 'Lora';
+    color: #768088;
+}
