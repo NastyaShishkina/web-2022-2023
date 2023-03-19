@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>Escape</title>
     <link href="../css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="top">
-      <div class="top__navig navig">
+    <header class="header">
+      <div class="header__navig navig">
         <span class="navig__title">Escape.</span>
         <nav class="navig__menu menu">
           <a class="menu__item" href="https://ispring.institute/">HOME</a>
@@ -16,44 +20,38 @@
           <a class="menu__item" href="https://ispring.institute/it-designer">CONTACT</a>
         </nav>
       </div>
-      <div class="top__heading heading">
-        <h1 class="heading__headline">Let's do it together.</h1>
-        <p class="heading__subheadline">We travel the world in search of stories. Come along for the ride.</p>
-      </div>
-      <button class="top__button">View Latest Posts</button>
+      <h1 class="header__headline">Let's do it together.</h1>
+      <p class="header__subheadline">We travel the world in search of stories. Come along for the ride.</p>
+      <button class="header__button">View Latest Posts</button>
     </header>
-    <main>
-      <nav>
-        <a href="https://ispring.institute/">Nature</a>
-        <a href="https://ispring.institute/software-engineering">Photography</a>
-        <a href="https://ispring.institute/marketing">Relaxation</a>
-        <a href="https://ispring.institute/design">Vacation</a>
-        <a href="https://ispring.institute/product-manager">Travel</a>
-        <a href="https://ispring.institute/praktikum-pogruzhenie-v-programmirovanie-dlya-10-11-klassov">Adventure</a>
+    <main class="main">
+      <nav class="main__categories categories">
+        <a class="categories__item" href="https://ispring.institute/">Nature</a>
+        <a class="categories__item" href="https://ispring.institute/software-engineering">Photography</a>
+        <a class="categories__item" href="https://ispring.institute/marketing">Relaxation</a>
+        <a class="categories__item" href="https://ispring.institute/design">Vacation</a>
+        <a class="categories__item" href="https://ispring.institute/product-manager">Travel</a>
+        <a class="categories__item" href="https://ispring.institute/praktikum-pogruzhenie-v-programmirovanie-dlya-10-11-klassov">Adventure</a>
       </nav> 
-      <section>
-        <h2>Featured Posts</h2>
-        <div>
-          <div>
-            <h3>The Road Ahead</h3>
-            <p>The road ahead might be paved - it might not be.</p>
-          </div>
-          <div>
-            <img src="../images/Mat.png" alt="Mat Vogels">
-            <span>Mat Vogels</span>
-            <span>September 25, 2015</span>
+      <section class="main__posts posts">
+        <h2 class="posts__headline">Featured Posts</h2>
+        <div class="posts__card card-big card-big_background-1">
+          <h3 class="card-big__headline">The Road Ahead</h3>
+          <p class="card-big__subheadline">The road ahead might be paved - it might not be.</p>
+          <div class="card-big__caption caption">
+            <img class="caption__photo" src="../images/Mat.png" alt="Mat Vogels">
+            <span class="caption__name">Mat Vogels</span>
+            <span class="caption__date">September 25, 2015</span>
           </div>
         </div>
-        <div>
-          <span>Adventure</span>
-          <div>
-            <h3>From Top Down</h3>
-            <p>Once a year, go someplace you’ve never been before.</p>
-          </div>
-          <div>
-            <img src="../images/William.png" alt="William Wong">
-            <span>William Wong</span>
-            <span>September 25, 2015</span>
+        <div class="posts__card card-big card-big_background-2">
+          <span class="card-big__label">Adventure</span>
+          <h3 class="card-big__headline">From Top Down</h3>
+          <p class="card-big__subheadline">Once a year, go someplace you’ve never been before.</p>
+          <div class="card-big__caption caption">
+            <img class="caption__photo" src="../images/William.png" alt="William Wong">
+            <span class="caption__name">William Wong</span>
+            <span class="caption__date">September 25, 2015</span>
           </div>
         </div>
       </section>
@@ -61,10 +59,8 @@
         <h2>Most Recent</h2>
         <div>
           <img src="../images/balloons.jpg" alt="Balloons">
-          <div>
-            <h3>Still Standing Tall</h3>
-            <p>Life begins at the end of your comfort zone.</p>
-          </div>
+          <h3>Still Standing Tall</h3>
+          <p>Life begins at the end of your comfort zone.</p>
           <div>
             <img src="../images/William.png" alt="William Wong">
             <span>William Wong</span>
@@ -73,10 +69,8 @@
         </div>
         <div>
           <img src="../images/bridge.jpg" alt="Bridge">
-          <div>
-            <h3>Sunny Side Up</h3>
-            <p>No place is ever as bad as they tell you it’s going to be.</p>
-          </div>
+          <h3>Sunny Side Up</h3>
+          <p>No place is ever as bad as they tell you it’s going to be.</p>
           <div>
             <img src="../images/Mat.png" alt="Mat Vogels">
             <span>Mat Vogels</span>
@@ -85,10 +79,8 @@
         </div>
         <div>
           <img src="../images/sunset.jpg" alt="Sunset">
-          <div>
-            <h3>Water Falls</h3>
-            <p>We travel not to escape life, but for life not to escape us.</p>
-          </div>
+          <h3>Water Falls</h3>
+          <p>We travel not to escape life, but for life not to escape us.</p>
           <div>
             <img src="../images/Mat.png" alt="Mat Vogels">
             <span>Mat Vogels</span>
@@ -97,10 +89,8 @@
         </div>
         <div>
           <img src="../images/ocean.jpg" alt="Ocean">
-          <div>
-            <h3>Through the Mist</h3>
-            <p>Travel makes you see what a tiny place you occupy in the world.</p>
-          </div>
+          <h3>Through the Mist</h3>
+          <p>Travel makes you see what a tiny place you occupy in the world.</p>
           <div>
             <img src="../images/William.png" alt="William Wong">
             <span>William Wong</span>
@@ -109,10 +99,8 @@
         </div>
         <div>
           <img src="../images/funicular.jpg" alt="Funicular">
-          <div>
-            <h3>Awaken Early</h3>
-            <p>Not all those who wander are lost.</p>
-          </div>
+          <h3>Awaken Early</h3>
+          <p>Not all those who wander are lost.</p>
           <div>
             <img src="../images/Mat.png" alt="Mat Vogels">
             <span>Mat Vogels</span>
@@ -121,10 +109,8 @@
         </div>
         <div>
           <img src="../images/waterfall.jpg" alt="Waterfall">
-          <div>
-            <h3>Try it Always</h3>
-            <p>The world is a book, and those who do not travel read only one page.</p>
-          </div>
+          <h3>Try it Always</h3>
+          <p>The world is a book, and those who do not travel read only one page.</p>
           <div>
             <img src="../images/Mat.png" alt="Mat Vogels">
             <span>Mat Vogels</span>
@@ -135,7 +121,7 @@
     </main>
     <footer>
       <h2>Stay in Touch</h2>
-      <input type="text" placeholder="Enter your email address">
+      <input type="email" placeholder="Enter your email address">
       <button>Submit</button>
       <div>
         <span>Escape.</span>
