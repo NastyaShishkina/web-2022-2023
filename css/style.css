@@ -14,7 +14,14 @@
 
 .navig
 {
-    color: #fff;
+    color: #FFFFFF;
+}
+
+.navig_with-background
+{
+    height: 90px;
+    background: rgba(35, 47, 56, 0.6);
+    border-radius: 0px;
 }
 
 .navig__title
@@ -134,13 +141,9 @@
     margin-left: 100px;
 }
 
-.main__posts-featured
-{
-    /* text-align: center; */
-}
-
 .posts__title
 {
+    position: relative;
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
@@ -150,13 +153,15 @@
     letter-spacing: 2px;
     color: #2E2E2E;
     margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 .posts__title::after
 {
-    content: '';
     position: absolute;
+    content: '';
     display: block;
+    margin-top: 16px;
     border-top: 1px solid #DEDEDE;
     border-radius: 0;
     width: 180px;
@@ -192,6 +197,7 @@
     line-height: 30px;
     color: #FFFFFF;
     margin-left: 20px;
+    margin-top: 0px;
     margin-bottom: 6px;
 }
 
@@ -211,6 +217,7 @@
 .card-big__caption
 {
     margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
 }
 
@@ -307,4 +314,84 @@
     color: #999999;
     background: #FCFCFC;
     margin-left: 13px;
+    border-top: red;
+}
+
+.footer
+{
+    background: url('../images/footer_background.jpg');
+    height: 378px;
+    width: 100%;
+}
+
+.footer__title
+{
+    position: relative;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;   
+    color: #EFEFEF;
+    margin-bottom: 38px;
+}
+
+.footer__title::after
+{
+    position: absolute;
+    content: '';
+    display: block;
+    border-top: 1px solid #DEDEDE;
+    border-radius: 0;
+    width: 180px;
+}
+
+.footer__input
+{
+    display: inline-block;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #817F83;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 305px;
+    background: #FFFFFF;
+    border: 0px;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.footer__button
+{
+    display: inline-block;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #F8F8F8;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 44px;
+    padding-right: 44px;
+    width: 125px;
+    border-radius: 0px 3px 3px 0px;
+    border: 0px;
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.menu__item_footer
+{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.menu__item_footer + .menu__item_footer
+{
+    margin-left: 20px;
 }
