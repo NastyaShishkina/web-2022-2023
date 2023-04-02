@@ -9,10 +9,11 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../images/background.jpg");
+    background-image: url("../img/background.jpg");
     background-color: rgba(0, 0, 0, 0.5);
     height: 500px;
     width: 100%;
+    background-size: cover;
 }
 
 .header__navig
@@ -244,12 +245,12 @@ body
 
 .card-big_background-1
 {
-    background-image: url("../images/northern_lights.jpg");
+    background-image: url("../img/northern_lights.jpg");
 }
 
 .card-big_background-2
 {
-    background-image: url("../images/Chinese_lanterns.jpg");
+    background-image: url("../img/Chinese_lanterns.jpg");
 }
 
 .card-big__headline
@@ -408,9 +409,10 @@ body
     align-items: center;
     flex-wrap: wrap;
     align-content: flex-start;
-    background: url('../images/footer_background.jpg');
+    background: url('../img/footer_background.jpg');
     height: 378px;
     width: 100%;
+    background-size: cover;
 }
 
 .footer__title
