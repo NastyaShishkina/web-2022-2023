@@ -546,6 +546,7 @@ body
     margin-right: 240px;
     margin-bottom: 135px;
     margin-left: 240px;
+    white-space: pre-line;
 }
 
 .post
