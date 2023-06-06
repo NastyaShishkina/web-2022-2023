@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Escape</title>
-    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
         <h2 class="posts__title">Featured Posts</h2>
         {{ range .Cards }}
           {{ if .Featured }}
-            <div class="posts__card-big card-big {{ .CardImg }}">
+            <a class="posts__card-big card-big" href="/post/{{ .PostID }}" style="background-image: url('{{ .Img }}');">
               <h3 class="card-big__headline">{{ .Title }}</h3>
               <p class="card-big__subheadline">{{ .Subtitle }}</p>
               <div class="card-big__caption caption">
@@ -45,7 +45,7 @@
                 <span class="caption__name">{{ .AuthorName }}</span>
                 <span class="caption__date">{{ .PublishDate }}</span>
               </div>
-            </div>
+            </a>
           {{ end }}
         {{ end }}
       </section>
@@ -53,8 +53,8 @@
         <h2 class="posts__title">Most Recent</h2>
         {{ range .Cards }}
           {{ if not .Featured }}
-            <div class="posts__card-small card-small">
-              <img class="card-small__image" src="{{ .CardImg }}" alt="Balloons">
+            <a class="posts__card-small card-small" href="/post/{{ .PostID }}">
+              <img class="card-small__image" src="{{ .Img }}" alt="Balloons">
               <h3 class="card-small__headline">{{ .Title }}</h3>
               <p class="card-small__subheadline">{{ .Subtitle }}</p>
               <div class="card-small__caption caption caption_recent">
@@ -62,7 +62,7 @@
                 <span class="caption__name">{{ .AuthorName }}</span>
                 <span class="caption__date">{{ .PublishDate }}</span>
               </div>
-            </div>
+            </a>
           {{ end }}
         {{ end }}
       </section>

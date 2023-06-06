@@ -240,17 +240,8 @@ body
     justify-content: flex-end;
     align-items: flex-start;
     flex-wrap: wrap;
-    border-radius: 3px;    
-}
-
-.card-big_background-1
-{
-    background-image: url("../img/northern_lights.jpg");
-}
-
-.card-big_background-2
-{
-    background-image: url("../img/Chinese_lanterns.jpg");
+    border-radius: 3px; 
+    text-decoration: none;   
 }
 
 .card-big__headline
@@ -350,6 +341,7 @@ body
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.09);
     border-radius: 3px;
     background: #FFFFFF;
+    text-decoration: none;
 }
 
 .card-small__image
